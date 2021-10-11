@@ -1,0 +1,254 @@
+{
+    "info": {
+        "_postman_id": "5435ee97-66ab-4e73-a57e-9ebb85565c30",
+        "name": "lior-api-test",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Sample endpoint: Returns details about a particular user",
+            "id": "20b4e82f-b44d-4b43-8c7f-c0c4406b3c52",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/user?id=77842771",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "user"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "77842771",
+                            "description": "(Required) ID of the user"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "0477f61c-e243-4b4d-a1fd-c0e86e349192",
+                    "name": "Sample response: Details about a user by ID",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=77842771",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "77842771"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "disabled": false,
+                            "description": "A link to the next page of responses",
+                            "key": "x-next",
+                            "value": "sint incididunt commodo oc"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"id\": -90264744,\n \"name\": \"nostrud nisi eu reprehenderit sunt\",\n \"tag\": \"elit adipisicing anim nulla\"\n}"
+                },
+                {
+                    "id": "82eb7f9f-7ca9-4357-bbab-4e5d51f51602",
+                    "name": "Unexpected error",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=77842771",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "77842771"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"code\": -59315066,\n \"message\": \"Lorem veniam\"\n}"
+                },
+                {
+                    "id": "e45c5736-fb62-43c5-a331-9876a0bad000",
+                    "name": "Sample endpoint: Returns details about a particular user",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=77842771",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "77842771",
+                                    "description": "(Required) ID of the user"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Date",
+                            "value": "Mon, 11 Oct 2021 12:47:31 GMT"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "50"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        },
+                        {
+                            "key": "Server",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "x-srv-trace",
+                            "value": "v=1;t=d074b7d7831a9e4b"
+                        },
+                        {
+                            "key": "x-srv-span",
+                            "value": "v=1;s=e4b0413f2623ca18"
+                        },
+                        {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                        },
+                        {
+                            "key": "X-RateLimit-Limit",
+                            "value": "120"
+                        },
+                        {
+                            "key": "X-RateLimit-Remaining",
+                            "value": "116"
+                        },
+                        {
+                            "key": "X-RateLimit-Reset",
+                            "value": "1633956485"
+                        },
+                        {
+                            "key": "ETag",
+                            "value": "W/\"32-aWbZVl+iGU8nrNYXsZT2Hj8whZI\""
+                        },
+                        {
+                            "key": "Vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"code\": -59315066,\n    \"message\": \"Lorem veniam\"\n}"
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "basic",
+        "basic": [
+            {
+                "key": "username",
+                "value": "<Basic Auth Username>",
+                "type": "string"
+            },
+            {
+                "key": "password",
+                "value": "<Basic Auth Password>",
+                "type": "string"
+            }
+        ]
+    },
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "998cf3f4-47e5-40f6-aa15-9a88f537793d",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "4c314bbc-b802-4de9-a4fc-549b8b0e38e4",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "e4a16474-7370-405c-a470-53c2950a1415",
+            "key": "baseUrl",
+            "value": "https://706bd6c2-4047-412e-bd20-157b19ec0bcb.mock.pstmn.io/"
+        }
+    ]
+}
